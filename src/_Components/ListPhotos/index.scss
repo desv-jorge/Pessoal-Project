@@ -1,0 +1,19 @@
+.list-photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); // Colunas maiores
+    gap: 20px; // Mais espaçamento entre os itens
+    margin: 1rem;
+
+    .card-photo {
+        border: 2px solid #000;
+        padding: 10px;
+        border-radius: 8px;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    }
+}

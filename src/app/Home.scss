@@ -1,0 +1,69 @@
+.welcome-screen {
+    width: 100vw;   // Garante que a largura cubra toda a tela
+    height: 100vh;  // Garante que a altura cubra toda a tela
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("https://i.gifer.com/1F1I.gif"); 
+    background-size: cover;
+    background-position: center;
+    color: #eaff71;
+    text-shadow: 
+        2px 2px 0px #000,    // Sombra inferior direita
+        -2px 2px 0px #000,   // Sombra inferior esquerda
+        2px -2px 0px #000,   // Sombra superior direita
+        -2px -2px 0px #000;  // Sombra superior esquerda
+    
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+
+        &:hover {
+            background-color: #45a049;
+        }
+    }
+}
+
+#button {
+    align-self: center;  // Centraliza o botão dentro do flexbox
+    margin: 1rem;
+    background-color: #FFD700; // Amarelo ouro
+    border: 2px solid #FFC107; // Amarelo mais intenso
+    color: #333;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+        background-color: #FFC107;
+        transform: scale(1.05);
+    }
+
+    &:active {
+        background-color: #FFA000;
+        transform: scale(0.98);
+    }
+}
+
