@@ -10,8 +10,8 @@ export default function CardPhotos({ path }: CardPhotosProps) {
             <Image 
                 src={path.startsWith('/images/') ? path : `/images/${path}`} 
                 alt="Imagem"
-                width={380}
-                height={400}
+                width={360}
+                height={380}
                 id='img'
                 unoptimized
                 style={{ objectFit: 'cover', borderRadius: '8px' }}
