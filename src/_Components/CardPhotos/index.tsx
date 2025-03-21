@@ -8,7 +8,7 @@ export default function CardPhotos({ path }: CardPhotosProps) {
     return (
         <div id='card'>
             <Image 
-                src={path} 
+                src={path.startsWith('/images/') ? path : `/images/${path}`} 
                 alt="Imagem"
                 width={380}
                 height={400}
